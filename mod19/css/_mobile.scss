@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  
+  /* header and body fonts  */
+  h1 {
+    font-size: calc(1rem * 1.2 * 1.2 * 1.2 * 1.2);
+    font-family: $sans;
+    font-weight: bold;
+    text-align: left;
+  }
+  h2 {
+    font-size: calc(1rem * 1.2 * 1.2 * 1.2);
+  }
+  h3 {
+    font-size: calc(1rem * 1.2 * 1.2);
+  }
+  h4 {
+    font-size: calc(1rem * 1.2);
+  }
+  h5 {
+    font-size: calc(1rem * 1);
+  }
+  h6 {
+    font-family: $sansalt;
+    line-height: 1.4em;
+    font-size: calc(1rem * 0.5);
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  header {
+    text-align: center;
+    background-color: $main-color;
+    border-bottom: $border $secondary-color;
+  }
+  body {
+    font-family: $sansalt;
+    line-height: 1.8em;
+    font-size: 18px;
+    color: $bodytext;
+    text-align: left;
+    margin: 0 auto;
+  }
+  
+  a {
+    color: $secondary-color;
+  }
+  a:link {
+    background-color: transparent;
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+    border-radius: $corners;
+  }
+  /* navbar styling */
+  
+  nav ul {
+   @include nospace;
+    padding: 5rem auto;
+    list-style-type: none;
+    background-color: $main-color;
+  }
+  
+  nav {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    color: $background-color;
+    border-radius: $corners;
+    margin: 0 0 2rem 0;
+    text-align: center;
+  }
+  nav a:hover {
+    color: $secondary-color;
+  }
+  
+  nav .logo a {
+    background-color: transparent;
+    margin: 0;
+  }
+  a:hover {
+    color: $background-color;
+    background-color: $main-color;
+    text-decoration: none;
+  }
+  /* button styling */
+  
+  .button {
+    @include nospace;
+    display: block;
+    font-family: $sans;
+    padding: 1rem 10rem;
+    text-align: center;
+    background-color: $background-color;
+    color: $main-color;
+    border-radius: $corners;
+    border: $buttonborder $main-color;
+    font-weight: bold;
+  }
+  
+  /* footer styling*/
+  footer {
+    text-align: center;
+    font-family: $sansalt;
+    margin: -10px;
+    padding: 40px;
+    background-color: $main-color;
+    color: $background-color;
+  }
+  
+  /* Layout Containers */
+  
+  .col {
+    padding-right: auto;
+    padding-left: auto;
+    margin: 50px;
+  }
+  
+  
+  
+  
+    /* Float clearfix */
+  
+    .clearfix::after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+  
+  /* Three-column grid. */
+  .card-container {
+    align-items: start;
+    display: grid;
+    grid-gap: 20px;
+    padding: 2rem;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+  }

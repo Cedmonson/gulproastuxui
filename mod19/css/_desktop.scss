@@ -1,0 +1,53 @@
+@media (min-width: 768px) {
+    .container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .button {
+      display: block;
+      font-family: "Poppins", sans-serif;
+      margin: 2rem 10rem 0 0rem;
+      padding: 1rem;
+    }
+    .col {
+      float: left;
+    }
+  
+    .primary {
+      width: 30%;
+    }
+  
+    .secondary {
+      width: 40%;
+    }
+  }
+
+@media (min-width: 1078px) {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .col {
+      float: left;
+    }
+  
+    .primary {
+      width: 30%;
+    }
+  
+    .secondary {
+      width: 40%;
+    }
+    nav ul {
+      justify-content: flex-start;
+    }
+    nav a {
+      margin-top: 3.5rem;
+    }
+    .logo {
+      flex-basis: auto;
+      margin-right: auto;
+    }
+}

@@ -1,0 +1,48 @@
+ /* Media Queries */
+ @media (min-width: 576px) {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .col {
+      float: left;
+    }
+  
+    .primary {
+      width: 80%;
+    }
+  
+    .secondary {
+      width: 80%;
+    }
+    nav {
+      margin-left: 0;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  
+    nav a {
+      margin: 0 0 3rem 0;
+    }
+  
+    .logo {
+      flex-basis: 100%;
+      text-align: center;
+    }
+    /* Float clearfix */
+  
+    .clearfix::after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+  }
+
+
+

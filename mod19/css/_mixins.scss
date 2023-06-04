@@ -1,0 +1,12 @@
+/* mixins */
+@mixin nospace {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @mixin border {
+    padding: 2rem;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
